@@ -1,5 +1,5 @@
 <?php
-include "../db.php";
+include __DIR__ . "/../db.php";
 
 // Already logged in? Go to dashboard
 if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true) {
