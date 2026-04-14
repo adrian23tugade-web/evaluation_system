@@ -6,7 +6,7 @@
   },
   "rewrites": [
     { "source": "/", "destination": "/api/index.php" },
-    { "source": "/admin/(.*)", "destination": "/api/admin/$1" },
-    { "source": "/(.*)", "destination": "/api/$1" }
+    { "source": "/admin/(.*\\.php)", "destination": "/api/admin/$1" },
+    { "source": "/(.*\\.php)", "destination": "/api/$1" }
   ]
 }

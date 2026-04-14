@@ -1,1 +1,6 @@
-<?php require dirname(dirname(__DIR__)) . '/admin/admin_logout.php';
+<?php
+include "../db.php";
+session_unset();
+session_destroy();
+header("Location: admin_login.php");
+exit();

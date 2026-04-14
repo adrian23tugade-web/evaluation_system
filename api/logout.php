@@ -1,1 +1,6 @@
-<?php require dirname(__DIR__) . '/logout.php';
+<?php
+include "db.php";
+session_destroy();
+header("Location: login.php");
+exit();
+?>
