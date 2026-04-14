@@ -1,0 +1,22 @@
+# Environment & secrets
+.env
+.env.local
+.env.production
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# XAMPP / local dev only — do not commit XAMPP configs
+/DB/
+
+# Large upload files (keep folder, ignore contents except .gitkeep)
+uploads/*
+!uploads/.gitkeep
