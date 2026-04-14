@@ -21,7 +21,7 @@ $monthly = [];
 for($m = 5; $m >= 0; $m--){
     $label = date('M', strtotime("-$m months"));
     $ym    = date('Y-m', strtotime("-$m months"));
-    $rm = $conn->prepare("SELECT COUNT(*) as c FROM evaluation WHERE DATE_FORMAT(date_submitted,'%Y-%m') = ?");
+    $rm = $conn->prepare("SELECT COUNT(*) as c FROM evaluation WHERE DATE_FORMAT(created_at,'%Y-%m') = ?");
     if($rm){ $rm->bind_param("s",$ym); $rm->execute(); $monthly[$label]=(int)$rm->get_result()->fetch_assoc()['c']; }
     else { $monthly[$label]=0; }
 }

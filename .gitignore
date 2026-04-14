@@ -20,3 +20,5 @@ Thumbs.db
 # Large upload files (keep folder, ignore contents except .gitkeep)
 uploads/*
 !uploads/.gitkeep
+!uploads/*.jpg
+!uploads/*.png
